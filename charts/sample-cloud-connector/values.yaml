@@ -41,8 +41,9 @@ image:
   repository: activiti-cloud-connector-custom
   tag: 0.0.1-SNAPSHOT
 service:
+#  this property wasn't in the new sample of this file, and getting a rbbitmq error
+#  name: sample-activiti7-cc-app
   type: ClusterIP
-  name: sample-activiti7-cc-app
   externalPort: 80
   internalPort: 8080
   annotations:
